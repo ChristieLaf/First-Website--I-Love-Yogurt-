@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(255, 200, 124) 0%,
+          rgb(252, 251, 121) 90%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #662eed;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #662eed;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 0 0 10px;
+      }
+
+      a {
+        font-weight: bolder;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #662eed;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10p;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #662eed;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      span.ingredient {
+        color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Yogurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/239/original/prevention-augnutrition-egg-067-preview-1661872975_%28for_Greek_Yogurt_final_project_SheCodes%29.jpg?1681163043"
+        alt="Greek Yogurt"
+        width="300"
+      />
+      <br />
+
+      <p>
+        <strong
+          >Strained yogurt, <span class="ingredient">Greek yogurt, </span>
+          yogurt cheese, sack yogurt, or kerned yogurt is yogurt that has been
+          strained to remove most of its whey, resulting in athicker consistency
+          than normal unstrained yogurt, while still preserving the distinctive
+          sour taste of yogurt. Please click link below to read more.
+        </strong>
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Strained_yogurt"
+        target="_blank"
+        class="learn-more"
+      >
+        <em> Learn more on wikipedia</em>
+      </a>
+
+      <hr />
+      <button class="buy-button">👉🏽Buy Greek Yogurt</button>
+      <p class="footer">
+        This page was built by Christie Laferriere with guidance from
+        <a href="https://www.delac.io/" target="_blank"> Matt Delac </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        if ((emoji = "😊")) {
+          alert(
+            "That is my favorite emoji too, " +
+              name +
+              ". We'll be in touch by email, meanwhile have a lot of Yogurt! " +
+              emoji
+          );
+        } else {
+          alert(
+            "Thank you, " +
+              name +
+              " We'll be in touch by email, meanwhile have a lot of Yogurt! " +
+              emoji
+          );
+        }
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
